@@ -138,7 +138,7 @@ const App: React.FC = () => {
         {siteConfig.layout.map(renderSection)}
       </main>
       {showLoginModal && (
-        <AdminLogin onLogin={(p) => p === '1' ? (setIsAdminLoggedIn(true), localStorage.setItem('nail_admin_active', 'true'), true) : false} onClose={() => setShowLoginModal(false)} />
+        <AdminLogin onLogin={(p) => p === 'ky90570206' ? (setIsAdminLoggedIn(true), localStorage.setItem('nail_admin_active', 'true'), true) : false} onClose={() => setShowLoginModal(false)} />
       )}
       <Footer isAdmin={isAdminLoggedIn} siteConfig={siteConfig} onUpdateConfig={updateSiteConfig} onAdminClick={() => isAdminLoggedIn ? setIsAdminLoggedIn(false) : setShowLoginModal(true)} />
     </div>
